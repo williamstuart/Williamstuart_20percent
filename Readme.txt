@@ -1,10 +1,3 @@
-Readme.txt
-asdfasd
-asdf
-afds
-afds
-afd
-dfasaf
+20% Project
 
-
-asdf
+I will be testing the validity of a 20 week simple moving average (SMA) as a method of investing money in the stock market. I will try and use data from the entire S&P 500 stocks if I can get the data. This program will create the average and "purchase" shares when the stock rises above the SMA and "sell" when the stock dips below the SMA. My program will account for trading fees and determine whether it is worth it to use the SMA as a single baseline for investing.
