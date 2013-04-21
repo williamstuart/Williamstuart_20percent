@@ -6,7 +6,7 @@ public class Stock {
 	public static void main(String[] args) throws FileNotFoundException {
 		Stock MSFT;
 		MSFT = new Stock("MSFT", prices);
-		for(int i=101; i<2000; i++){
+		for(int i=100; i<2400; i++){
 			decision(MSFT, i);
 			System.out.println(accountValue(i, MSFT));
 		}
@@ -28,6 +28,7 @@ public class Stock {
 	}
 	
 	public static void decision(Stock stock, int date){
+		System.out.println(stock.prices.get(date));
 		if(SMAPoint(prices, date)<=prices.get(date)){
 			if(!investedIn){
 				buy(date, stock);
@@ -77,8 +78,8 @@ public class Stock {
 		double finalPrice=0;
 		for (int i = 0; i<20; i++){
 			finalPrice += prices.get(date-(i*5));
-			//System.out.println(finalPrice);
 		}
+		System.out.println(" "+finalPrice/20);
 		return finalPrice/20;
 	}
 }
